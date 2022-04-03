@@ -13,5 +13,27 @@
 <body>
 <h1>ola que hace?</h1>
 <img src="images/addiel.jpg" alt="yo" style="width:100%;">
+<h2>
+	<button onclick="getLocation()">Don't</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</h2>
 </body>
 </html>
