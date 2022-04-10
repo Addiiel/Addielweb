@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ola</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<style> 
+	body {background-color: black;}
+	h1 {color: white;}  
+</style>
+</head>
+<body>
+<h1>ola que hace?</h1>
+<img src="images/addiel.jpg" alt="yo" style="width:100%;">
+<h2>
+	<button onclick="getLocation()">Don't</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</h2>
+</body>
+</html>
