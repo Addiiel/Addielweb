@@ -13,8 +13,21 @@ body {
   margin:0;
   }
 
+
 .bg { 
   background-image: url(../../images/backmypc.png);
+}
+
+.arle {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.arri {
+  float: right;
+  width: 50%;
+  padding: 5px;
 }
 
 * {
@@ -107,12 +120,26 @@ li a:hover:not(.active) {
 .content1 {
   padding-top: 60px;
   background-color:#b0b0b0;
-  height:1500px;
   text-align: center;
   color: black;
   font-size: 25px;
 }
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.par1 {
+  text-align: left;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .arri, .arle {
+    width: 100%;
+  }
+}
 
 </style>
 </head>
@@ -128,30 +155,34 @@ li a:hover:not(.active) {
 
 <!-- End of Navbar -->
 
-<!-- Content1 -->
+<!-- Main content -->
 
-<div class="content1 bg">
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
+<!-- Article 1 -->
+
+<div class="row content1 bg slideshow-container">
+  <h1>AMD Ryzen™ 5 5600X</h1>
+  <div class="par1 arri">As a six-core, 12-thread processor, the $299 AMD Ryzen 5 5600X slots perfectly into the market for midrange gaming-focused CPUs, and brings with it the best balance of core count and cost in the company's latest launch of Zen 3-based processors. When put up against the so-so Intel Core i5-10600K, the AMD Ryzen 5 5600X comes out shining on the other side, presenting serious competition for Intel (albeit at a slightly higher price point than we're used to from Ryzens). The Ryzen 5 5600X set records in some of our gaming results, as well as being one of the best values in price-to-performance that AMD offers in 2020. It lacks the integrated graphics that some buyers in the midrange might be looking for, but that's a small ding on an otherwise stellar showing for this Editors' Choice pick among gaming CPUs, alongside the also-great budget-model Ryzen 3 3300X.</div>
+  <div><img src="../../images/processor.png" class="responsive arle"></div>
 </div>
+
+<!-- Article 2 -->
+
+<div class="row content1 bg slideshow-container">
+  <h1>ASUS Dual GeForce RTX™ 3060 OC Edition</h1>
+  <div class="par1 arle">As a six-core, 12-thread processor, the $299 AMD Ryzen 5 5600X slots perfectly into the market for midrange gaming-focused CPUs, and brings with it the best balance of core count and cost in the company's latest launch of Zen 3-based processors. When put up against the so-so Intel Core i5-10600K, the AMD Ryzen 5 5600X comes out shining on the other side, presenting serious competition for Intel (albeit at a slightly higher price point than we're used to from Ryzens). The Ryzen 5 5600X set records in some of our gaming results, as well as being one of the best values in price-to-performance that AMD offers in 2020. It lacks the integrated graphics that some buyers in the midrange might be looking for, but that's a small ding on an otherwise stellar showing for this Editors' Choice pick among gaming CPUs, alongside the also-great budget-model Ryzen 3 3300X.</div>
+  <div><img src="../../images/rtx3060.png" class="responsive arri"></div>
+</div>
+
+<!-- Article 3 -->
+
+<div class="row content1 bg slideshow-container">
+  <h1>Corsair 4000D Mid-Tower ATX Case</h1>
+  <div class="par1 arri">As a six-core, 12-thread processor, the $299 AMD Ryzen 5 5600X slots perfectly into the market for midrange gaming-focused CPUs, and brings with it the best balance of core count and cost in the company's latest launch of Zen 3-based processors. When put up against the so-so Intel Core i5-10600K, the AMD Ryzen 5 5600X comes out shining on the other side, presenting serious competition for Intel (albeit at a slightly higher price point than we're used to from Ryzens). The Ryzen 5 5600X set records in some of our gaming results, as well as being one of the best values in price-to-performance that AMD offers in 2020. It lacks the integrated graphics that some buyers in the midrange might be looking for, but that's a small ding on an otherwise stellar showing for this Editors' Choice pick among gaming CPUs, alongside the also-great budget-model Ryzen 3 3300X.</div>
+  <div><img src="../../images/case.png" class="responsive arle"></div>
+</div>
+
+
+
 
 <!-- End of content1-->
 
