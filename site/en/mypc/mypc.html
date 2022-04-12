@@ -121,8 +121,12 @@ ul {
   width: 100%;
 }
 
-li {
+li.right {
   float: right;
+}
+
+li.left {
+  float: left;
 }
 
 li a {
@@ -131,11 +135,15 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 li a:hover:not(.active) {
   background-color: #28AFB0;
   color: #364958;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.4s;
 }
 
 .active {
@@ -206,9 +214,10 @@ li a:hover:not(.active) {
 <!-- Navbar -->
 
 <ul>
-  <li><a href="../aboutme/aboutme.html">About me</a></li>
-  <li><a href="../stuff/stuff.html">Stuff</a></li>
-  <li><a href="../home.html">Home</a></li>
+  <li class="right"><a href="../aboutme/aboutme.html"><i class="fa-solid fa-circle-info"></i></a></li>
+  <li class="right"><a href="../cats/cats.html"><i class="fa-solid fa-cat"></i></a></li>
+  <li class="right"><a href="../movies/movies.html"><i class="fa-solid fa-clapperboard"></i></a></li>
+  <li class="left"><a href="../home.html"><i class="fa-solid fa-house-chimney"></i></a></li>
 </ul>
 
 <!-- End of Navbar -->

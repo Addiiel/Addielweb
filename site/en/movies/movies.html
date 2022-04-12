@@ -4,13 +4,19 @@
 <title>Addielweb</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/4265c95cee.js" crossorigin="anonymous"></script>
 <style>
+
 body {
   margin:0;
   }
+
+.bg { 
+  background-image: url(../images/backhome1.png);
+}
+
 
 * {
   box-sizing: border-box;
@@ -38,7 +44,7 @@ a.maya:hover {color: dimgrey;
   text-shadow: 2px 2px 5px seagreen;}
 
 a {
-  color: blueviolet;
+  color:  #C9E4CA;
 }
 
 
@@ -47,7 +53,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #212121;
+  background: rgb(3,25,38);
+  background: linear-gradient(90deg, rgba(3,25,38,1) 0%, rgba(89,131,129,1) 50%, rgba(162,173,89,1) 100%);
   position: fixed;
   top: 0;
   width: 100%;
@@ -63,14 +70,18 @@ li.left {
 
 li a {
   display: block;
-  color: blueviolet;
+  color: #031926;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background: rgb(162,173,89);
+  background: radial-gradient(circle, rgba(162,173,89,0) 0%, rgba(142,147,109,0) 100%);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 
 .active {
@@ -78,11 +89,11 @@ li a:hover:not(.active) {
 }
 
 .footer {
-  padding-top: 20px;
-  background-color: #212121;
-  height:120px;
+  padding-top: 10px;
+  background-color: #364958;
+  height:100px;
   bottom: 0;
-  color: blueviolet;
+  color: #87BBA2;
   text-align: center;
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   float: right;
@@ -106,9 +117,10 @@ li a:hover:not(.active) {
 .content1 {
   padding-top: 60px;
   background-color:#b0b0b0;
-  height:1500px;
+  height:1000px;
   text-align: center;
 }
+
 
 </style>
 </head>
@@ -117,9 +129,9 @@ li a:hover:not(.active) {
 <!-- Navbar -->
 
 <ul>
+  <li class="right"><a href="../aboutme/aboutme.html"><i class="fa-solid fa-circle-info"></i></a></li>
   <li class="right"><a href="../cats/cats.html"><i class="fa-solid fa-cat"></i></a></li>
   <li class="right"><a href="../mypc/mypc.html">My <i class="fa-solid fa-desktop"></i></a></li>
-  <li class="right"><a href="../movies/movies.html"><i class="fa-solid fa-clapperboard"></i></a></li>
   <li class="left"><a href="../home.html"><i class="fa-solid fa-house-chimney"></i></a></li>
 </ul>
 
@@ -127,9 +139,9 @@ li a:hover:not(.active) {
 
 <!-- Content1 -->
 
-<div class="content1">
-  <p>Thou shalt refer to me as "Addiel".</p>
-  <p></p>
+<div class="content1 bg">
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
   <p>Some text some text some text some text..</p>
   <p>Some text some text some text some text..</p>
   <p>Some text some text some text some text..</p>
@@ -186,6 +198,5 @@ li a:hover:not(.active) {
 
 </div>
 <!-- End of Footer -->
-
 </body>
 </html>
