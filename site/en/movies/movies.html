@@ -43,8 +43,16 @@ a.espa:hover {color: red;
 a.maya:hover {color: dimgrey;
   text-shadow: 2px 2px 5px seagreen;}
 
-a {
-  color:  #C9E4CA;
+a.foot {
+  color: #D7CEB2;
+}
+
+a.navbr {
+  color: #cdc6ae;
+}
+
+a.navbl {
+  color: #2589bd;
 }
 
 
@@ -53,8 +61,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: rgb(3,25,38);
-  background: linear-gradient(90deg, rgba(3,25,38,1) 0%, rgba(89,131,129,1) 50%, rgba(162,173,89,1) 100%);
+  background: rgb(205,198,174);
+  background: linear-gradient(90deg, rgba(205,198,174,1) 0%, rgba(56,104,106,1) 50%, rgba(37,137,189,1) 100%);
   position: fixed;
   top: 0;
   width: 100%;
@@ -70,7 +78,6 @@ li.left {
 
 li a {
   display: block;
-  color: #031926;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -90,10 +97,10 @@ li a:hover:not(.active) {
 
 .footer {
   padding-top: 10px;
-  background-color: #364958;
+  background-color: #38686A;
   height:100px;
   bottom: 0;
-  color: #87BBA2;
+  color: #D7CEB2;
   text-align: center;
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   float: right;
@@ -129,10 +136,11 @@ li a:hover:not(.active) {
 <!-- Navbar -->
 
 <ul>
-  <li class="right"><a href="../aboutme/aboutme.html"><i class="fa-solid fa-circle-info"></i></a></li>
-  <li class="right"><a href="../cats/cats.html"><i class="fa-solid fa-cat"></i></a></li>
-  <li class="right"><a href="../mypc/mypc.html">My <i class="fa-solid fa-desktop"></i></a></li>
-  <li class="left"><a href="../home.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+  <li class="right"><a class="navbr" href="../aboutme/aboutme.html"><i class="fa-solid fa-circle-info"></i></a></li>
+  <li class="right"><a class="navbr" href="../cats/cats.html"><i class="fa-solid fa-cat"></i></a></li>
+  <li class="right"><a class="navbr" href="../4students/4students.html"><i class="fa-solid fa-book"></i></a></li>
+  <li class="right"><a class="navbr" href="../mypc/mypc.html">My <i class="fa-solid fa-desktop"></i></a></li>
+  <li class="left"><a class="navbl" href="../home.html"><i class="fa-solid fa-house-chimney"></i></a></li>
 </ul>
 
 <!-- End of Navbar -->
@@ -169,11 +177,11 @@ li a:hover:not(.active) {
 <div class="row">
   <div class="footer rightfoo">
   <p>Language</p>
-  <a class="engl" href="https://www.facebook.com/Carloosaddiel" title="English">
+  <a class="engl foot" href="https://www.facebook.com/Carloosaddiel" title="English">
    <i class="fa-solid fa-burger grow"></i></a>
-  <a class="espa" href="https://www.facebook.com/Carloosaddiel" title="Español">
+  <a class="espa foot" href="https://www.facebook.com/Carloosaddiel" title="Español">
    <i class="fa-solid fa-pepper-hot grow"></i></a>
-  <a class="maya" href="https://www.facebook.com/Carloosaddiel" title="Maya">
+  <a class="maya foot" href="https://www.facebook.com/Carloosaddiel" title="Maya">
    <i class="fa-solid fa-gopuram grow"></i></a>
 </div>
 
@@ -187,13 +195,13 @@ li a:hover:not(.active) {
 <div class="row">
   <div class="footer leftfoo">
   <p>Don't follow me!</p>
-  <a class="face" href="https://www.facebook.com/Carloosaddiel" target="_blank" title="Facebook">
+  <a class="face foot" href="https://www.facebook.com/Carloosaddiel" target="_blank" title="Facebook">
     <i class="fa-brands fa-facebook grow"></i></a>
-  <a class="twit" href="https://twitter.com/Addiielo" target="_blank" title="Twitter">
+  <a class="twit foot" href="https://twitter.com/Addiielo" target="_blank" title="Twitter">
     <i class="fa-brands fa-twitter grow"></i></a>
-  <a class="inst" href="https://www.instagram.com/addielo_/" target="_blank" title="Instagram"> 
+  <a class="inst foot" href="https://www.instagram.com/addielo_/" target="_blank" title="Instagram"> 
     <i class="fa-brands fa-instagram grow"></i></a>
-  <a class="disc" href="https://discord.gg/gWt5v8r2" target="_blank" title="Discord"> 
+  <a class="disc foot" href="https://discord.gg/gWt5v8r2" target="_blank" title="Discord"> 
     <i class="fa-brands fa-discord grow"></i></a>
 
 </div>

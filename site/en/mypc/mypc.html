@@ -153,7 +153,7 @@ li a:hover:not(.active) {
 .footer {
   padding-top: 20px;
   background-color: #364958;
-  height:120px;
+  height:100px;
   bottom: 0;
   color: #87BBA2;
   text-align: center;
@@ -207,15 +207,39 @@ li a:hover:not(.active) {
   }
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
 </style>
 </head>
 <body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <!-- Navbar -->
 
 <ul>
   <li class="right"><a href="../aboutme/aboutme.html"><i class="fa-solid fa-circle-info"></i></a></li>
   <li class="right"><a href="../cats/cats.html"><i class="fa-solid fa-cat"></i></a></li>
+  <li class="right"><a href="../4students/4students.html"><i class="fa-solid fa-book"></i></a></li>
   <li class="right"><a href="../movies/movies.html"><i class="fa-solid fa-clapperboard"></i></a></li>
   <li class="left"><a href="../home.html"><i class="fa-solid fa-house-chimney"></i></a></li>
 </ul>
@@ -323,6 +347,27 @@ li a:hover:not(.active) {
 
 </div>
 <!-- End of Footer -->
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
 
 </body>
 </html>
