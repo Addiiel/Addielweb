@@ -151,7 +151,7 @@ li a:hover:not(.active) {
 }
 
 .footer {
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: #364958;
   height:100px;
   bottom: 0;
@@ -216,15 +216,19 @@ li a:hover:not(.active) {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
-  color: white;
+  background-color: #364958;
+  color: #C9E4CA;
   cursor: pointer;
-  padding: 15px;
+  padding: 12px;
   border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #28AFB0;
+  color: #364958;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.4s;
 }
 
 
@@ -232,7 +236,9 @@ li a:hover:not(.active) {
 </head>
 <body>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- back to top button -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <!-- Navbar -->
 
